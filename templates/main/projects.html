@@ -1,0 +1,111 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+{% include 'main/navbar.html' %}
+   <div class="container">
+       <h1 class="center-align">Projects And Experiences</h1>
+
+        <div class="row">
+            
+            <div class="col s12 m6">
+
+            </div>
+
+            <div class="col s12 m6">
+
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Teaching Assistant at
+                            Coding Ninjas (July 2019 – Sep 2019)</div>
+                        <div class="collapsible-body"><span>
+                                1) Solved doubts and cleared concepts of students related to Data Structures and
+                                Algorithms, DBMS, OS
+                               <br> 2) Debug codes of students
+                               <br> 3) Optimize codes</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Summer Trainee at Banaras
+                            Hindu University (B.H.U), India (May 2019 -June 2019)</div>
+                        <div class="collapsible-body"><span>Worked on a Chat Application project for both Android and
+                                IOS devices. This project was developed using React Native which is a JavaScript based
+                                framework.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Hackathon –
+                            Support-Services Recommendation System (Django, Jupyter Notebook)</div>
+                        <div class="collapsible-body"><span>Used Collaborative filtering algorithm to recommend
+                                different services to customers also used JavaScript library Chart.js for visualization
+                                purposes.</span></div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Image Colorization Using
+                            CNN (Neural Networks)</div>
+                        <div class="collapsible-body"><span>Colored black and white images using convolutional neural
+                                networks and pretrained model Inception Resnet V3</span></div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Digit Classification From
+                            Image (MNIST dataset) (Tensorflow, Jupyter Notebook)</div>
+                        <div class="collapsible-body"><span>Used TENSORFLOW Framework to build a Neural Network to
+                                predict digit from image.</span></div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <h2 class="center-align">Certificates</h2>
+            <div class="col s12 m6">
+                <ul class="collection">
+                    <li class="collection-item"> CodeChef Certified Data Structures And Algorithms Programme (CCDSAP)</li>
+                    <li class="collection-item"> Coursera (IBM) : Python For Data Science</li>
+                    <li class="collection-item"> Coursera (IBM): Data Analysis with Python</li>
+                    <li class="collection-item"> Coursera (IBM): Applied Data Science Capstone</li>
+                    <li class="collection-item"> Coursera (deeplearning.ai) : Neural Networks and Deep Learning</li>
+                    <li class="collection-item"> Coursera UC SanDiego : Algorithmic Toolbox</li>
+                    <li class="collection-item"> Coding Ninjas : Machine Learning (Cognizance)</li>
+                    <li class="collection-item"> Coding Ninjas : Competitive Coding (Eminence)</li>
+                    <li class="collection-item"> Coursera: Front-End Web UI Frameworks and Tools: Bootstrap 4</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <h2 class="center-align">COMMUNITY WORK/ SPECIAL ACHIEVEMENTS</h2>
+            <div class="col s12 m6">
+
+            </div>
+            <div class="col s12 m6">
+                <ul class="collection">
+                    <li class="collection-item">September Lunchtime 2018 (LTIME64B) Global Rank: 424, College Rank: 1
+                    </li>
+                    <li class="collection-item">CodeChef Highest Rating: 1732</li>
+                    <li class="collection-item"> 3 Star CodeChef Rating</li>
+                    <li class="collection-item"> Codechef Username : rk_221b</li>
+                </ul>
+            </div>
+        </div>
+   </div>
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems);
+  });
+
+</script>
+
+{% endblock %}

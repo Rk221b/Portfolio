@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+
+</head>
+<body>
+   {% block content %}   {% endblock %}
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">RK</h5>
+                    <p class="grey-text text-lighten-4">Email: rk221.r@gmail.com</p>
+                    <p class="grey-text text-lighten-4">Contact: 8009740227</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="{% url 'index' %}">Home Page</a></li>
+                        <li><a class="grey-text text-lighten-3" href="{% url 'projects' %}">Projects</a></li>
+                        <li><a class="grey-text text-lighten-3" href="{% url 'languages' %}">Languages</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Copyright Text
+            </div>
+        </div>
+    </footer>
+
+   {% block script %}    {% endblock %}
+</body>
+</html>

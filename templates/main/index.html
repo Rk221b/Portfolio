@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  {% include 'main/navbar.html' %}
+
+<div class="container">
+  <h1 class="center-align">Home Page</h1>
+
+  <div class='row'>
+      <div class='col s12 m4'>
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <img class="materialboxed responsive-img" src="{% static '01.jpg' %}">
+                    <span class="card-title">Ritik Kapoor</span>
+                </div>
+                <div class="card-action">
+                    <a href="https://www.linkedin.com/in/rk221/">LinkedIn</a>
+                    <a href="https://www.codechef.com/users/rk_221b">CodeChef</a>
+                    <a href="https://github.com/Rk221b">GitHub</a>
+                </div>
+            </div>
+      </div>
+
+      <div class='col s12 m8'>
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">About Me</span>
+                    <p>Love Competitive Programming and always try to imporve my skills by taking part in online competitions and hackathons on
+                    Codechef,CodeForces,HackerRank apart from this currently i am exploring and learning Machine Learning and Deep Learning
+                    field by reading different research papers and doing projects and competitions on Hacker Earth which involves real world
+                    type application of ML</p>
+                </div>
+            </div>
+      </div>
+  </div>
+
+</div>
+<br>
+<br>
+{% endblock %}
+
+{% block script %}
+<script>
+
+ document.addEventListener('DOMContentLoaded', function() {
+ var elems = document.querySelectorAll('.materialboxed');
+ var instances = M.Materialbox.init(elems);
+ });
+
+</script>
+
+{% endblock %}
